@@ -263,6 +263,7 @@ complete -o default -F _fzf_opts_completion fzf
 
 d_cmds="${FZF_COMPLETION_DIR_COMMANDS:-cd pushd rmdir}"
 a_cmds="
+  ${FZF_COMPLETION_PATH_COMMANDS}
   awk cat diff diff3
   emacs emacsclient ex file ftp g++ gcc gvim head hg java
   javac ld less more mvim nvim patch perl python ruby
